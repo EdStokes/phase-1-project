@@ -1,1 +1,2 @@
 # phase-1-project
+This app is a passdown to be used by on duty techs to passdown critical information that has occured during shift to the incoming shift. The app can also be used to research issues that have taken place on previous shifts. 

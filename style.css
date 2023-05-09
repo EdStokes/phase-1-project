@@ -26,7 +26,6 @@
   }
   
   .logo {
-    cursor: pointer;
     color: white;
     font-size: xx-large;
   }
@@ -54,5 +53,17 @@
     cursor: pointer;
   }
  
+  div {
+    display: none;
+  }
+
   
+  .body_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-top: 5%;
+    background-color: white;
+
+  }
  

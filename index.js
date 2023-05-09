@@ -1,27 +1,27 @@
-console.log("App is running");
+document.addEventListener("DOMContentLoaded", () => {
 
-//Selects which page is displayed in the DOM
-function showPage(page) {
-    document.querySelectorAll("div").forEach(div => {
-       div.style.display = 'none'; 
-    })
-    document.querySelector(`#${page}`).style.display = 'block';
-}
+    navMenu = document.querySelector('.nav1');
+    menuButtons = navMenu.querySelectorAll('button')
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('button').forEach(button => {
-        button.onclick = function() {
-            showPage(this.dataset.page);
-        }
-    })
-})
+    function showPage(page) {
+        document.querySelectorAll("div").forEach(div => {
+            div.style.display = 'none'; 
+        })
+        document.querySelector(`#${page}`).style.display = 'block';
+    }
 
-//site info
 
-function siteInfo() {
-    console.log("add site info")
-}
+   menuButtons.forEach(button => {
+    button.onclick = function() {
+        showPage(this.dataset.page);
+    }
+   })
 
-document.addEventListener('DOMContenLoaded', function(){
-    document.querySelector('#siteInfo').onclick = siteInfo;
+
+
+
+
+
+
+
 })
